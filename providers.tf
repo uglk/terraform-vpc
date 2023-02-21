@@ -9,7 +9,7 @@ terraform {
     bucket  = "terraform-ugl-backend"
     key     = "state/terraform.tfstate"
     region  = "ap-south-1"
-    profile = "mumbai"
+    #profile = "mumbai"
   }
 }
 
