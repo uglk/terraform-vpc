@@ -1,9 +1,9 @@
 variable "location" {
   default = "ap-south-1"
 }
-variable "user" {
+/*variable "user" {
   default = "mumbai"
-}
+}*/
 
 variable "cidr" {
   default = "192.168.0.0/16"
