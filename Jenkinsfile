@@ -9,7 +9,7 @@ pipeline {
                git branch: 'main', url: 'https://github.com/uglk/terraform-vpc.git'
             }
         }
-        
+        /*
         stage('Initialize Scripts') {
             steps {
               sh 'terraform init'
@@ -24,6 +24,11 @@ pipeline {
             steps {
               sh 'terraform apply --auto-approve'
             }
+        }*/
+        stage('destroying resources'){
+           steps{
+            sh 'terraform destroy --auto-approve'
+           }
         }
     }
 }
